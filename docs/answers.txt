@@ -1,0 +1,30 @@
+(a) How many commits have been done to the repository by the end of step 8?
+--> 3 commits have been done to the repository by the end of step 8.
+
+(b) When was the file .gitignore modified last? (5 points)
+--> Date: Thu Sep 15 10:29:34 2016 -0400
+
+(c) How many times was each of the files inside the src folder modified? (5 points)
+--> BasicWeapon.java 	- 1 (File was created)
+    RoleGame.java 	- 1 (File was created)
+    Sword.java 		- 2 (Modified once after creation)
+    Weapon.java 	- 1 (File was created)
+    WeaponFactory.java 	- 1 (File was created)
+
+(d) What is the difference between git log and git status? (5 points)
+--> git log displays the full history of all commit messages in the repository since the initial commit, with commit ID, author, timestamp, and commit message.
+    git status shows the current status of the working directory for the local repository, and the current branch the user is working on, along with pending commits if any.
+
+(e) What command would you use to see the commits where "RoleGame.java" was one of the committed files?
+--> The following command is used here:
+	git log -- src\edu\fsu\cs\cen5035\RoleGame.java
+    In general for a file name <file name> with path <path>, the command would be:
+	git log -- <path>\<filename>
+
+(f) What command would you use to see the commits whose commit message contains the word "file?"
+--> The following command is used here:
+	git log --grep=file
+
+(g) What command would you use to see the commits made by "Alice" between 09/01/2016 and 09/16/2016?
+--> The following command is used here:
+	git log --committer=Alice --after="08/31/2016" --until=="09/16/2016"
