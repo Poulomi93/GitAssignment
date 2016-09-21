@@ -1,9 +1,5 @@
 package edu.fsu.cs.cen5035;
 
-/**
- *
- * @author Javier
- */
 public class Sword extends BasicWeapon implements Weapon {
 
     public Sword() {
